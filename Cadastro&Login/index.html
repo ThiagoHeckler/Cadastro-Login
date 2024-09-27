@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Cadastro&Login</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Cadastro&Login</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav><!-- Parte das opções de navegação da pagina -->
+    <main>
+        <article>
+            <div class="container">
+                <div class="form">
+                    <form action="login.php" method="POST">
+                        <h1>Login</h1>
+                        <input type="text" name="email" placeholder="Email">
+                        <input type="password" name="senha" placeholder="Senha">
+                        <button type="submit">Entrar</button>
+                    </form>
+                </div>
+                <div class="form">
+                    <form action="cadastro.php" method="POST">
+                        <h1>Cadastro</h1>
+                        <input type="text" name="nome" placeholder="Nome">
+                        <input type="text" name="email" placeholder="Email">
+                        <input type="password" name="senha" placeholder="Senha">
+                        <button type="submit">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
+
+<!--
+USAR ESSES REPOSITORIOS PARA O JAVA MAVEN
+https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
+https://mvnrepository.com/artifact/org.postgresql/postgresql
+https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+-->
