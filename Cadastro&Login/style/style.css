@@ -1,18 +1,19 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: #d4d4d4;
     width: 100%;
 }
 
-header{
+header {
     background-color: #35688a;
     color: #000000;
     padding: 10px 0;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
-nav{
+
+nav {
     background-color: #234257;
     color: #ffffff;
     padding: 10px 0;
@@ -20,7 +21,7 @@ nav{
     font-family: 'Times New Roman', Times, serif;
 }
 
-nav a{
+nav a {
     color: #ffffff;
     text-decoration: none;
     padding: 10px 20px;
@@ -29,74 +30,75 @@ nav a{
     cursor: pointer;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: #64b7ee;
     color: #000000;
 }
 
-nav a.active{
+nav a.active {
     background-color: #ffffff;
     color: #000000;
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
     padding: 0;
 }
 
-nav ul li{
+nav ul li {
     display: inline;
 }
 
-main{
+main {
     display: flex;
-    flex-direction:column ;
-    background-color: #e6dbb8;
+    flex-direction: column;
+    background-color: #c5c5c5;
     color: #000000;
     padding: 20px;
     font-family: 'Times New Roman', Times, serif;
     align-items: center;
 }
 
-article{
+
+article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #fde3b2f5;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
-    box-shadow: #000000 5px 5px 5px;
-    width: 50%;
+    box-shadow: #000000 0px 0px 15px 3px;
 }
 
-form{
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 20px;
+.formulario {
+    margin: 40px;
     border-radius: 10px;
+    width: 70%;
+    box-sizing: border-box;
+}
 
-    & h1{
-        text-align: center;
-    }
+h1 {
+    text-align: center;
+}
 
-    & input[type="text"], input[type="password"]{
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        border-radius: 5px;
-        border: 1px solid #000000;
-    }
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
 
-    & button{
-        width: 30%;
-        padding: 10px;
-        margin: 10px 0;
-        border-radius: 5px;
-        border: 1px solid #000000;
-        background-color: #35688a;
-        color: #ffffff;
-        cursor: pointer;
-    }
-
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background-color: #35688a;
+    color: #ffffff;
+    cursor: pointer;
+    box-sizing: border-box;
 }
