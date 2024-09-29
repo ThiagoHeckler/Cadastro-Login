@@ -16,23 +16,24 @@
     </header>
     <nav>
         <ul>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a onclick="showLogin()">Login</a></li>
+            <li><a onclick="showCadastro()">Cadastro</a></li>
             <li><a href="sobre.html">Sobre</a></li>
         </ul>
-    </nav><!-- Parte das opções de navegação da pagina -->
+    </nav>
     <main>
         <article>
             <div class="container">
-                <div class="form">
+                <div class="form" id="loginForm">
                     <form action="login.php" method="POST">
                         <h1>Login</h1>
                         <input type="text" name="email" placeholder="Email">
                         <input type="password" name="senha" placeholder="Senha">
                         <button type="submit">Entrar</button>
+                        <button type="button" onclick="showCadastro()">Cadastrar</button>
                     </form>
                 </div>
-                <div class="form">
+                <div class="form" id="cadastroForm" style="display: none;">
                     <form action="cadastro.php" method="POST">
                         <h1>Cadastro</h1>
                         <input type="text" name="nome" placeholder="Nome">
