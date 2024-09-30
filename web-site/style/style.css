@@ -31,7 +31,7 @@ nav a {
 }
 
 nav a:hover {
-   background-color: #001fcf;
+    background-color: #001fcf;
     color: #ffffff;
 }
 
@@ -57,6 +57,7 @@ main {
     padding: 20px;
     font-family: 'Times New Roman', Times, serif;
     align-items: center;
+    height: 70vh;
 }
 
 article {
@@ -81,6 +82,7 @@ article {
         cursor: pointer;
         color: #4788ff;
     }
+
     & a:hover {
         color: #004ca3;
     }
@@ -110,24 +112,34 @@ button {
     box-sizing: border-box;
 }
 
-.btn-seguir{
+.btn-seguir {
     background-color: rgb(160, 255, 65);
     color: #000000;
 }
 
-.btn-seguir:hover{
+.btn-seguir:hover {
     background-color: #177500;
     transition: 500ms linear;
     color: #ffffff;
 }
 
-.btn-cancelar{
-    background: #ED213A;  /* fallback for old browsers */
+.btn-cancelar {
+    background: #ED213A;
+    /* fallback for old browsers */
     color: #ffffff;
 }
 
-.btn-cancelar:hover{
-    background: #570000;  /* fallback for old browsers */
+.btn-cancelar:hover {
+    background: #570000;
+    /* fallback for old browsers */
     transition: 500ms linear;
     color: #ffffff;
+}
+
+footer {
+    background-color: #35688a;
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
