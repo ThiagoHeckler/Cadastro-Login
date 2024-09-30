@@ -9,43 +9,35 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <h1>Cadastro&Login</h1>
-        </div>
-    </header>
-    <nav>
-        <ul>
-            <li><a onclick="showLogin()">Login</a></li>
-            <li><a onclick="showCadastro()">Cadastro</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-        </ul>
-    </nav>
+    <div id="header"></div>
+    <div id="nav"></div>
     <main>
         <article>
             <div class="formulario" id="loginForm">
-                <form action="login.php" method="POST">
+                <form id="loginFormElement" action="login.php" method="POST">
                     <h1>Login</h1>
                     <input type="text" name="email" placeholder="Email">
                     <input type="password" name="senha" placeholder="Senha">
-                    <button type="submit">Entrar</button>
-                    <button type="button" onclick="showCadastro()">Cadastrar</button>
+                    <p>Não é cadastrado? <a onclick="showCadastro()"> Cadastre-se</a></p>
+                    <button type="submit" class="btn-seguir">Entrar</button>
+                    <button type="button" class="btn-cancelar" onclick="resetForm('loginFormElement')">Cancelar</button>
                 </form>
             </div>
             <div class="formulario" id="cadastroForm" style="display: none;">
-                <form action="cadastro.php" method="POST">
+                <form id="cadastroFormElement" action="cadastro.php" method="POST">
                     <h1>Cadastro</h1>
                     <input type="text" name="nome" placeholder="Nome">
                     <input type="text" name="email" placeholder="Email">
                     <input type="password" name="senha" placeholder="Senha">
-                    <button type="submit">Cadastrar</button>
+                    <p>Já é cadastrado? <a onclick="showLogin()"> Faça login</a></p>
+                    <button type="submit" class="btn-seguir">Cadastrar</button>
+                    <button type="button" class="btn-cancelar" onclick="resetForm('cadastroFormElement')">Cancelar</button>
                 </form>
             </div>
         </article>
     </main>
-    <footer>
-
-    </footer>
+    <div id="footer"></div>
+    <script src="script/loadComponents.js"></script>
     <script src="script/script.js"></script>
 </body>
 

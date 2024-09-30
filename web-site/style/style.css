@@ -31,8 +31,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #64b7ee;
-    color: #000000;
+   background-color: #001fcf;
+    color: #ffffff;
 }
 
 nav a.active {
@@ -59,12 +59,11 @@ main {
     align-items: center;
 }
 
-
 article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fde3b2f5;
+    background-color: #fffbbe;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
@@ -76,6 +75,15 @@ article {
     border-radius: 10px;
     width: 70%;
     box-sizing: border-box;
+
+    & a {
+        padding-left: 5px;
+        cursor: pointer;
+        color: #4788ff;
+    }
+    & a:hover {
+        color: #004ca3;
+    }
 }
 
 h1 {
@@ -97,8 +105,29 @@ button {
     margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #000000;
-    background-color: #35688a;
     color: #ffffff;
     cursor: pointer;
     box-sizing: border-box;
+}
+
+.btn-seguir{
+    background-color: rgb(160, 255, 65);
+    color: #000000;
+}
+
+.btn-seguir:hover{
+    background-color: #177500;
+    transition: 500ms linear;
+    color: #ffffff;
+}
+
+.btn-cancelar{
+    background: #ED213A;  /* fallback for old browsers */
+    color: #ffffff;
+}
+
+.btn-cancelar:hover{
+    background: #570000;  /* fallback for old browsers */
+    transition: 500ms linear;
+    color: #ffffff;
 }
