@@ -15,7 +15,7 @@ function loadComponent(componentId, url) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    loadComponent('header', '/xampp/Cadastro-Login/web-site/layout/header.html');
-    loadComponent('nav', '/xampp/Cadastro-Login/web-site/layout/nav.html');
-    loadComponent('footer', '/xampp/Cadastro-Login/web-site/layout/footer.html');
+    loadComponent('header', '../layout/header.html');
+    loadComponent('nav', '../layout/nav.html');
+    loadComponent('footer', '../layout/footer.html');
 });
